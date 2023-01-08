@@ -1,4 +1,5 @@
 # txt-split
+Translated by machine.  
 This program can split TXT files by lines.
 # How To Use
 You can download the source code and compile it yourself, or you can download the compiled version in Releases;  
