@@ -23,14 +23,14 @@ input_with_locale() {
 }
 
 if [ "$#" -lt 1 ]; then
-    input_fn=$(input_with_locale "请输入分割文件名/路径:\n" \
-                                 "Please input the file name/path to split:\n")
+    input_fn=$(input_with_locale "请输入分割文件名/路径:" \
+                                 "Please input the file name/path to split:")
 else
     input_fn="$1"
 fi
 
-output_fls=$(input_with_locale "请输入分割后每文件行数:\n" "Please input the number of lines per file:\n")
-output_fnh=$(input_with_locale "请输入分割后文件名:\n" "Please input the file name after splitting:\n")
+output_fls=$(input_with_locale "请输入分割后每文件行数:" "Please input the number of lines per file:")
+output_fnh=$(input_with_locale "请输入分割后文件名:" "Please input the file name after splitting:")
 
 split_file() {
     input_file="$1"

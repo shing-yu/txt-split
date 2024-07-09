@@ -36,20 +36,19 @@ input_with_locale() {
 
 # Get input file name/path
 if [ $# -lt 1 ]; then
-    input_fn=$(input_with_locale "请输入分割文件名/路径:\n" \
-                                 "Please input the file name/path to split:\n")
+    input_fn=$(input_with_locale "请输入分割文件名/路径:" \
+                                 "Please input the file name/path to split:")
 else
     input_fn=$1
 fi
 
 # Get split size
-size_input=$(input_with_locale "请输入分割后每文件大小（如10MiB, 20MB, 300KB, 500KiB）:\n" \
-                               "Please input the size of each file after splitting:\n"\
-                               "(such as 10MiB, 20MB, 300KB, 500KiB):\n")
+size_input=$(input_with_locale "请输入分割后每文件大小（如10MiB, 20MB, 300KB, 500KiB）:" \
+                               "Please input the size of each file after splitting (such as 10MiB, 20MB, 300KB, 500KiB):")
 
 # Get output file name prefix
-output_fnh=$(input_with_locale "请输入分割后文件名:\n" \
-                               "Please input the file name after splitting:\n")
+output_fnh=$(input_with_locale "请输入分割后文件名:" \
+                               "Please input the file name after splitting:")
 
 # Parse size function
 parse_size() {
